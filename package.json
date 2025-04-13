@@ -1,6 +1,6 @@
 {
   "name": "@adnanwani/universal-darkmode",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,15 +8,14 @@
   "files": [
     "dist"
   ],
-  "author": "Adnan Wani",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Adnan-Hamid-wani/universal-dark-mode.git"
+    "url": "https://github.com/Adnan-hamid-wani/Universal-dark-mode.git"
   },
-  "publishConfig": {
-    "access": "public"
+  "bugs": {
+    "url": "https://github.com/Adnan-hamid-wani/Universal-dark-mode/issues"
   },
+  "homepage": "https://github.com/Adnan-hamid-wani/Universal-darkmode#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -25,8 +24,8 @@
     "preview": "vite preview"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "dependencies": {
     "lucide-react": "^0.344.0"
