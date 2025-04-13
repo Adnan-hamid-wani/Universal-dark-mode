@@ -1,6 +1,4 @@
-import React from 'react';
 import { DarkModeProvider, DarkModeToggle } from '@yourusername/react-darkmode';
-import { Abc } from './abc';
 
 function App() {
   return (
@@ -17,7 +15,6 @@ function App() {
               <h2 className="text-2xl font-semibold mb-4">Auto-adapting Card</h2>
               <p>This card automatically switches between light and dark mode.</p>
             </div>
-            <Abc/>
 
             {/* Custom styled card that keeps its colors */}
             <div className="p-6 rounded-lg no-dark-mode bg-purple-100">

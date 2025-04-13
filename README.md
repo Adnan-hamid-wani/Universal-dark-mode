@@ -1,12 +1,6 @@
-# Universal Darkmode
-
+# React Dark Mode Library
 
 Zero-config dark mode for React applications with Tailwind CSS. Add dark mode to your entire application with JUST TWO LINES OF CODE!
-## Steps 
-1: Give Provider to Entire App,
-2: Add a toggle Button anywhere,
-and Boom!
-
 ## Features
 
 - 🌓 Smooth dark/light mode transitions

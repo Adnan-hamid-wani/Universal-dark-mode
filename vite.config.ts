@@ -5,7 +5,10 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      jsxRuntime: 'automatic',
+      jsxImportSource: 'react',
+    }),
     dts({
       insertTypesEntry: true,
     }),
@@ -18,10 +21,11 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'lucide-react'],
+      external: ['react', 'react/jsx-runtime', 'react-dom', 'lucide-react'],
       output: {
         globals: {
           react: 'React',
+          'react/jsx-runtime': 'jsx',
           'react-dom': 'ReactDOM',
           'lucide-react': 'LucideReact',
         },
@@ -29,6 +33,10 @@ export default defineConfig({
         preserveModulesRoot: 'src',
       },
     },
+  },
+  server: {
+    open: true,
+    port: 5173
   },
   test: {
     environment: 'jsdom',
